@@ -8,12 +8,12 @@ jwt:
       resource-id: authenticationClientId
 keycloak:
   realm: cqu-g4-insurance
-  domain:
-  adminClientId:
-  adminClientSecret:
+  domain: localhost:7080
+  adminClientId: admin-cli
+  adminClientSecret: FrsQh56Xjy5JAMBfj4m1vI6ahsiu82vd
   client: authenticationClientId
   urls:
-    auth: https://${keycloak.domain}
+    auth: http://${keycloak.domain}
 spring:
   profile:
     active: dev
