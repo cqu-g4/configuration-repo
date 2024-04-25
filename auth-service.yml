@@ -16,7 +16,7 @@ keycloak:
     auth: https://${keycloak.domain}
 spring:
   profile:
-    active: local
+    active: dev
   security:
     oauth2:
       resourceserver:
