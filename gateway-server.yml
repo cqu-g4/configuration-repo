@@ -1,0 +1,44 @@
+server:
+  port: 8000
+
+spring:
+  application:
+    name: GATEWAY-SERVER
+  cloud:
+    gateway:
+      routes:
+        - id: auth-route
+          uri: lb://auth-service
+          predicates:
+            - Path=/auth/**
+          filters:
+            - AddResponseHeader=X-Powered-By, CQU_G4
+
+        - id: therapy-provider-route
+          uri: lb://THERAPY-PROVIDER-SERVICE
+          predicates:
+            - Path=/therapy-provider/**
+          filters:
+            - AddResponseHeader=X-Powered-By, CQU_G4
+
+        - id: admin-route
+          uri: lb://ADMIN-SERVICE
+          predicates:
+            - Path=/admin/**
+          filters:
+            - AddResponseHeader=X-Powered-By, CQU_G4
+
+eureka:
+  instance:
+    prefer-ip-address: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+    gateway:
+      enabled: true

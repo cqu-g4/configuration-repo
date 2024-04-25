@@ -22,3 +22,7 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: https://${keycloak.domain}/realms/${keycloak.realm}
+
+eureka:
+  instance:
+    prefer-ip-address: true
