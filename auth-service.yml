@@ -12,7 +12,7 @@ keycloak:
   adminClientId: admin-cli
   adminClientSecret: FrsQh56Xjy5JAMBfj4m1vI6ahsiu82vd
   client: authenticationClientId
-  clientSecret: WFjD2tl9iPZctqiJS8MC009heO92eo1d
+  clientSecret: HYF9IXrP97fnAZIFOe5eEmy1v3wFb44e
   urls:
     auth: http://${keycloak.domain}
 spring:
