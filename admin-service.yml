@@ -7,3 +7,9 @@ eureka:
   instance:
     prefer-ip-address: true
     hostname: localhost
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017
+      database: insurance_admin_service_db
