@@ -28,6 +28,13 @@ spring:
           filters:
             - AddResponseHeader=X-Powered-By, CQU_G4
 
+        - id: user-route
+          uri: lb://USER-SERVICE
+          predicates:
+            - Path=/users/**
+          filters:
+            - AddResponseHeader=X-Powered-By, CQU_G4
+
 eureka:
   instance:
     prefer-ip-address: true
