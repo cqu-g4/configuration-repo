@@ -1,7 +1,7 @@
 server:
   port: 8083
   servlet:
-    context-path: /user-service
+    context-path: /users
 
 eureka:
   instance:
