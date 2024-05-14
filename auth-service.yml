@@ -27,4 +27,4 @@ spring:
 eureka:
   instance:
     prefer-ip-address: true
-    hostname: localhost
+    hostname: 172.20.0.1

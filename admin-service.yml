@@ -6,10 +6,10 @@ server:
 eureka:
   instance:
     prefer-ip-address: true
-    hostname: localhost
+    hostname: 172.20.0.1
 
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27017
+      uri: mongodb://172.20.0.1:27017
       database: insurance_admin_service_db
