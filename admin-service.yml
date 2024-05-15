@@ -16,5 +16,7 @@ eureka:
 spring:
   data:
     mongodb:
-      uri: mongodb://172.20.0.1:27017
+      uri: mongodb://10.152.0.2:27017
+      username: rooot
+      password: aASDFGHWERTYUIOVBNMBNXCVB234567SDFGHJ
       database: insurance_admin_service_db

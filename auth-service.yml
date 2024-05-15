@@ -8,7 +8,7 @@ jwt:
       resource-id: authenticationClientId
 keycloak:
   realm: cqu-g4-insurance
-  domain: localhost:7080
+  domain: keycloak.csangharsha.com.np
   adminClientId: admin-cli
   adminClientSecret: FrsQh56Xjy5JAMBfj4m1vI6ahsiu82vd
   client: authenticationClientId
@@ -22,7 +22,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://${keycloak.domain}/realms/${keycloak.realm}
+          issuer-uri: https://${keycloak.domain}/realms/${keycloak.realm}
 
 eureka:
   instance:
