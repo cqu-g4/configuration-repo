@@ -10,7 +10,7 @@ keycloak:
   realm: cqu-g4-insurance
   domain: keycloak.csangharsha.com.np
   adminClientId: admin-cli
-  adminClientSecret: FrsQh56Xjy5JAMBfj4m1vI6ahsiu82vd
+  adminClientSecret: ngiyvUrmDHUa7TeuUHhv1AB65p7Ql0ul
   client: authenticationClientId
   clientSecret: HYF9IXrP97fnAZIFOe5eEmy1v3wFb44e
   urls:
