@@ -14,7 +14,7 @@ keycloak:
   client: authenticationClientId
   clientSecret: HYF9IXrP97fnAZIFOe5eEmy1v3wFb44e
   urls:
-    auth: http://${keycloak.domain}
+    auth: https://${keycloak.domain}
 spring:
   profile:
     active: dev
